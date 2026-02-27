@@ -16,8 +16,10 @@ return new class extends Migration
             $table->string('title');
             $table->string('author');
             $table->string('slug')->unique();
-            $table->text('body');
-            $table->timestamps();
+            $table->text('news');
+            # $table->timestamps();
+            $table->string('created_at');
+            $table->string('updated_at');
         });
     }
 
